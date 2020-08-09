@@ -3,14 +3,16 @@ body, html
     height: 100%;
     font: 16px Arial;
     scroll-behavior: smooth;
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
 }
 
 #home
 {
-    height: 700px;
-    background: url("earth.jpg") no-repeat center;
+    min-height: 700px;
+    /*background: url("earth.jpg") no-repeat center;*/
+    background-color: #ffeb3b;
     padding-top: 100px;
-    opacity: 0.6;
 }
 
 #Diagramm-CoronaFaelle
@@ -21,7 +23,7 @@ body, html
 #corona_cases
 {
     margin-top: 2px;
-    background-color: #ffeb3b;
+    background-color: #ffffff;
     padding-top: 100px;
     min-height: 800px;
 }
@@ -29,15 +31,16 @@ body, html
 #Weather
 
 {
+    background-color: #ffde03;
     padding-top: 100px;
     min-height: 800px;
 }
 
-h1
+h2
 {
     font-size: 70px;
-    color: #ff3d00;
     opacity: 0.8;
+    padding-bottom: 20px;
 }
 
 #currency_display
@@ -46,11 +49,18 @@ h1
     color: white;
     border: 1px solid dodgerblue;
     min-height: 50px;
+
 }
 
-.titel
+#titel
 {
     font-size: 70px;
+    padding-bottom: 40px;
+    font-family: "Times New Roman", serif;
+}
+#titel:hover {
+    -webkit-animation: shake 1s;
+    animation: shake 1s;
 }
 
 label
@@ -67,10 +77,26 @@ label
 
 .btn.btn-primary.btn-sm
 {
+    background-color: #6200ee;
     width: 30%;
+    font-weight: bold;
+}
+.btn.btn-secondary
+{
+    background-color: #6200ee;
 }
 
-.table.table-dark
+.page-footer
+{
+    background-color: #ffc107;
+}
+
+a
+{
+    color: #3E0094;
+}
+
+.table.table-light
 {
     margin-top: 50px;
 }
@@ -102,4 +128,8 @@ label
 .autocomplete-active {
     background-color: DodgerBlue !important;
     color: #ffffff;
+}
+
+.navbar a{
+    font-weight: bold;
 }

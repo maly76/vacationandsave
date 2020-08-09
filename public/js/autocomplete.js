@@ -64,10 +64,3 @@ function autocomplete(inp, arr) {
         closeAllLists(e.target);
     });
 }
-
-exports.turnOn = function(countries)
-{
-    debugger
-    autocomplete(document.getElementById("countryinputhome"), countries);
-    autocomplete(document.getElementById("countryinput"), countries);
-}

@@ -1,6 +1,15 @@
-const fetch = require('node-fetch');
+function sendWeatherAPI(city) {
+    fetch("http://api.openweathermap.org/data/2.5/forecast?q="+city+"&appid=7e6d51ff596c8140a694ab4176efd5f0&units=metric").then(function (response) {
+        return response.json();
+    }).then(function (weather) {
+        setzeInfosWeatherTable(weather);
+    }).catch(function (error) {
+        console.log("Etwas ist schiefgelaufen bei openweather");
+    });
+}
 
-function setzeInfosWeatherTable(weather, table) {
+function setzeInfosWeatherTable(weather) {
+    var table = document.getElementById("weather_table");
     var results = ["undefined"];
     weather.list.map(function getinfos(ele) {
         if (results[results.length - 1].split('_')[0] !== ele.dt_txt.split(' ')[0])
@@ -23,14 +32,4 @@ function setzeInfosWeatherTable(weather, table) {
         max_temp.innerHTML = results[i].split('_')[4];
         min_temp.innerHTML = results[i].split('_')[5];
     }
-}
-
-exports.sendWeatherAPI = function sendWeatherAPI(input, table) {
-    fetch("http://api.openweathermap.org/data/2.5/forecast?q="+input+"&appid=7e6d51ff596c8140a694ab4176efd5f0&units=metric").then(function (response) {
-        return response.json();
-    }).then(function (weather) {
-        setzeInfosWeatherTable(weather, table);
-    }).catch(function (error) {
-        console.log("Etwas ist schiefgelaufen bei openweather");
-    });
 }
