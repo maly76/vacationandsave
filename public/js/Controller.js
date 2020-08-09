@@ -10,6 +10,8 @@ const buttonclearhome = document.getElementById("cleartablehome");
 buttonhome.addEventListener("click", function () {
     const country = document.getElementById("countryinputhome");
     const city = document.getElementById("cityinputhome");
+    const table = document.getElementById("weather_table");
+    cleartable(table);
     sendAPIs(country.value, city.value);
     country.value = "";
     city.value = "";
