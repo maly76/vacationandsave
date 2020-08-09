@@ -104,6 +104,7 @@ function getcountriesinfos(country) {
 }
 
 function findeWaehrungswert(symbol, callback) {
+    alert(symbol)
     fetch("http://data.fixer.io/api/latest?access_key=231cf8ce5bb1ceeb65b72c883c99df95&format=1&symbols="+symbol+"").then(function (response) {
         return response.json();
     }).then(function (obj) {
