@@ -1,0 +1,22 @@
+{
+  "name": "singlepage",
+  "version": "1.0.0",
+  "description": "npm install\r npm install express jade\r npm install node-fetch --save\r npm install -g browserify",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.thm.de:maly76/vocationandsave.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
