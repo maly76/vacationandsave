@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script src="js/Corona.js"></script>
     <script src="js/Weather.js"></script>
     <script src="js/autocomplete.js"></script>
@@ -34,6 +35,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#Weather">Weather</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Einführung">Introduction</a>
             </li>
         </ul>
     </div>
@@ -126,6 +130,29 @@
     </div>
 </section>
 
+<section id="Einführung">
+    <div>
+        <h2>Introduction</h2>
+        <hr>
+        <p class="text-muted">
+            <ul STYLE="text-align: left">
+                <li>On this app you can get the information about a desired country and city with one click.
+                    For this you have to enter the two text fields (country, city) on the home page.
+                    The app is designed to give you the information you need to get a good first impression of the desired holiday destination before you go on holiday.
+                </li>
+                <li>On the home page you get the information (capital city, used currency, language, exchange rate) of the entered country,
+                    the corresponding informations are also entered in the respective table on the Corona and Weather pages.
+                </li>
+                <li>If you wish, you can only use one specific service. E.g. request corona cases in a country or the weather situation in a city.
+                </li>
+                <li>The weather situation is given 6 days in forcast of the current date.</li>
+            </ul>
+        </p>
+        <br>
+        <p style="font-size: 30px; text-align: center">enjoy it..</p>
+    </div>
+</section>
+
 <footer class="page-footer font-small">
 
     <!-- Copyright -->
@@ -136,5 +163,22 @@
 </footer>
 
 <script src="js/Controller.js"></script>
+
+<script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#000"
+            },
+            "button": {
+                "background": "#f1d600"
+            }
+        },
+        "type": "opt-out",
+        "content": {
+            "href": "/index2.html#Datenschutz"
+        }
+    });
+</script>
 </body>
 </html>

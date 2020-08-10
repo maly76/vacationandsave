@@ -21,3 +21,42 @@ function loadcountries() {
         });
     });
 }
+
+function animatetitle() {
+    var ueberschrift = document.getElementById("titel").innerText.split("");
+    document.getElementById("titel").innerHTML = "";
+    let colors = ["red", "blue", "brown"]
+    let char = 0;
+    let timer = setInterval(ontick, 150);
+
+    //Beim Laden der Seite wird die Überschrift langsam Buchstabe für Buchstabe angezeigt
+    function ontick()
+    {
+        //jede 150ms wird ein weiterer Buchstabe von der Überschrift angezeigt
+        document.getElementById("titel").innerHTML += ueberschrift[char];
+        //dabei wird auch die Farbe geändert
+        document.getElementById("titel").style.color = colors[char];
+        char++
+        //wenn die Überschrift komplett da ist
+        if (char === ueberschrift.length)
+        {
+            complete();
+        }
+    }
+    function complete()
+    {
+        char = 0;
+        ueberschrift = document.getElementById("titel").textContent.split("");
+        clearInterval(timer);
+        timer = setInterval(changecolor, 250);
+    }
+
+    //die Farbe der Überschrift jede 250ms ändern
+    function changecolor()
+    {
+        document.getElementById("titel").style.color = colors[char%3];
+        if (char === 10)
+            char = 0
+        char++;
+    }
+}

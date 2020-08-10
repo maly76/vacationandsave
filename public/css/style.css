@@ -36,6 +36,17 @@ body, html
     min-height: 800px;
 }
 
+#Einführung
+{
+    padding-top: 100px;
+    min-height: 600px;
+}
+
+ul li
+{
+    font-size:30px;
+}
+
 h2
 {
     font-size: 70px;
@@ -49,7 +60,6 @@ h2
     color: white;
     border: 1px solid dodgerblue;
     min-height: 50px;
-
 }
 
 #titel
@@ -131,5 +141,6 @@ a
 }
 
 .navbar a{
+    font-size: 20px;
     font-weight: bold;
 }

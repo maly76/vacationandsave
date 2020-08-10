@@ -46,6 +46,7 @@ buttonclearhome.addEventListener("click", function () {
     cleartable(table);
 })
 
+animatetitle();
 loadcountries();
 autocomplete(document.getElementById("countryinputhome"), countries);
 autocomplete(document.getElementById("countryinput"), countries);
