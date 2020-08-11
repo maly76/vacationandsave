@@ -1,15 +1,14 @@
-
-##Vacation and Save:
+## Vacation and Save:
 -------------------
 
-##Introduction
+## Introduction
 * On this app you can get the informations about a desired country and city with one click. For this you have to enter the two text fields (country, city) on the home page. The app is designed to give you the information you need to get a good first impression of the desired holiday destination before you go on holiday.
 * On the home page you get the information (capital city, used currency, language, exchange rate) of the entered country, the corresponding informations are also entered in the respective table on the Corona and Weather pages.
 * If you wish, you can only use one specific service. E.g. request corona cases in a country or the weather situation in a city.
 * The weather situation is given 6 days in forcast of the current date.              
     enjoy it..
 
-##Installation steps
+## Installation steps
 
 * first you must insall npm because the app is running on node.js. You can do this on [npm](https://nodejs.org/en/download/) or on linux or ubunto with the command:
         
