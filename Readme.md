@@ -1,14 +1,15 @@
-#Vacation and Save:
--------------------
+# Vacation and Save:
 
-##Introduction
+## Introduction
 * On this app you can get the informations about a desired country and city with one click. For this you have to enter the two text fields (country, city) on the home page. The app is designed to give you the information you need to get a good first impression of the desired holiday destination before you go on holiday.
 * On the home page you get the information (capital city, used currency, language, exchange rate) of the entered country, the corresponding informations are also entered in the respective table on the Corona and Weather pages.
 * If you wish, you can only use one specific service. E.g. request corona cases in a country or the weather situation in a city.
 * The weather situation is given 6 days in forcast of the current date.              
     enjoy it..
 
-##Installation steps
+## Installation steps
+
+* go to your project file on the cmd 
 
 * first you must insall npm because the app is running on node.js. You can do this on [npm](https://nodejs.org/en/download/) or on linux or ubunto with the command:
         
@@ -34,12 +35,12 @@
 * install express 
 
         sudo npm install express
-    For more inormations aboaut installing express visit [expressjs.com](https://expressjs.com/de/starter/installing.html)
+    For more informations about installing express visit [expressjs.com](https://expressjs.com/de/starter/installing.html)
 
 * install node-fetch to be able to send the APIs and laod the responses.json. You can do this with the following command
 
         sudo npm install node-fetch --save
-    For more inormations aboaut installing node-fetch visit [npmjs.com](https://www.npmjs.com/package/node-fetch)
+    For more informations about installing node-fetch visit [npmjs.com](https://www.npmjs.com/package/node-fetch)
 
 * Now you can configure your main.js (start point in your project) to run the app at desired port.
   
@@ -53,7 +54,7 @@
   your app will be running on localhost:"your desired port"      
 * to deploy the app on heroku you have to follow the following steps: see [here](https://devcenter.heroku.com/articles/deploying-nodejs) for more informations.
     
-    1-  you must have git in you project
+    1-  you must have git in your project
     
      confirm that you have installed [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
      - initialize git
@@ -80,3 +81,16 @@
      confirm that you have configured the port in your main.js see [here](https://help.heroku.com/P1AVPANS/why-is-my-node-js-app-crashing-with-an-r10-error)
      
      The app will be available on heroku
+     
+## Color System
+
+*   My theme is theme1 from Google's Color system website. which uses the light yellow color as the primary color and the mauve as the secondary color.
+*   According to the introduction of google, the white color works very well with the yellow, and gives the website a pleasant effect, that's why I chose the white color for the introduction and corona parts.
+*   As mentioned, the color mauve is the secondary color for this theme, so all buttons, are filled with mauve.
+*   On this website, the color dark red, is also used for the background of the labels. Because, according to google color system, it fits my chosen theme very well.
+     
+## Quellennachweise
+
+* [https://www.w3schools.com/howto/howto_js_autocomplete.asp](https://www.w3schools.com/howto/howto_js_autocomplete.asp)
+    
+    autocomplete-Funktion in der autocomplete.js 
