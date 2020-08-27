@@ -36,13 +36,15 @@ body, html
     min-height: 800px;
 }
 
-#Einführung
+#Einführung,
+#Impressum
 {
     padding-top: 100px;
     min-height: 600px;
 }
 
-ul li
+ul li,
+.text-muted
 {
     font-size:30px;
 }
